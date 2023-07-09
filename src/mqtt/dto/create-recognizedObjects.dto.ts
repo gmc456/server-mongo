@@ -4,7 +4,7 @@ export class CreateRecognizedObjectDto {
   
   readonly id_estacion: string;
 
-  readonly timestamp: string;
+  readonly timestamp: Date;
 
   readonly objectsDetected: ObjectDetected[];
 }

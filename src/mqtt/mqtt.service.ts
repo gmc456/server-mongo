@@ -14,12 +14,4 @@ export class MqttService {
   async create(createRecognizedObjectDto: CreateRecognizedObjectDto): Promise<RecognizedObject> {
     return this.recognizedObjectModel.create(createRecognizedObjectDto);
   }
-  
-  /* async findAll(request: Request): Promise<RecognizedObject[]> { */
-  /*   return this.recognizedObjectModel */
-  /*     .find(request.query) */
-  /*     //.populate({ path: 'comments.username' }) */
-  /*     .setOptions({ sanitizeFilter: true }) */
-  /*     .exec(); */
-  /* } */
 }
